@@ -7,6 +7,7 @@ body{
     margin: 0;
     padding: 0;
 }
+/*-------- navbar style ---------*/
 .navbar{
     display: flex;
     justify-content: space-between;
@@ -20,12 +21,13 @@ body{
     
 }
 .navbar-links ul {
-    margin: 0;
+    margin-right: 100px;
     padding: 0;
     display: flex;
 }
 .navbar-links li {
     list-style: none;
+    margin-right: 30px;
 }
 .navbar-links li a {
     text-decoration: none;
@@ -74,4 +76,28 @@ body{
     .navbar-links.active {
         display: flex;
     }
+}
+/* -------main style--------- */
+section{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #ddd;
+}
+.container{
+    width: 80%;
+    display: block;
+    margin: auto;
+    padding-top: 100px ;
+}
+.content-section{
+    float: left;
+    width: 55%;
+}
+.image-section{
+    float: right;
+    width: 40%;
+}
+.image-section img {
+    width: 100%;
+    height: auto;
 }
